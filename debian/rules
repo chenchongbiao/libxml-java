@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+export CLASSPATH=/usr/share/java/libloader.jar:/usr/share/java/libbase.jar:/usr/share/java/commons-logging.jar
+
+%:
+	dh $@ --with javahelper
+
+override_dh_auto_build:
+	dh_auto_build
+	mv dist/libxml-*.jar dist/libxml.jar
+
+override_dh_auto_test:
+ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
+	dh_auto_build -- test
+endif

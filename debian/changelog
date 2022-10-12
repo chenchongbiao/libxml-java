@@ -1,0 +1,77 @@
+libxml-java (1.1.7-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release
+  * Build with the DH sequencer instead of CDBS
+  * Converted debian/copyright to the Copyright Format 1.0
+  * Added a watch file
+  * Standards-Version updated to 4.5.1
+  * Switch to debhelper level 13 (Closes: #965699)
+  * Use salsa.debian.org Vcs-* URLs
+  * Added the Homepage field
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Mon, 22 Feb 2021 15:40:27 +0100
+
+libxml-java (1.1.6.dfsg-3) unstable; urgency=low
+
+  [Miguel Landaeta]
+  * Team upload.
+  * Add Build-Depends on ant-optional. (Closes: #652753).
+  * Bump Standards-Version to 3.9.2. No changes were required.
+  * Switch to source format 3.0 (quilt).
+  * Remove deprecated simple-patchsys management patch system.
+
+  [tony mancill]
+  * Add Vcs-Git and Vcs-Browser to d/control. (Closes: #653038)
+
+ -- tony mancill <tmancill@debian.org>  Fri, 23 Dec 2011 09:07:02 -0800
+
+libxml-java (1.1.6.dfsg-2) unstable; urgency=low
+
+  * merge libbase 1.1.6-2 changes 
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 01 Nov 2011 15:33:58 +0000
+
+libxml-java (1.1.6.dfsg-1) unstable; urgency=low
+
+  * remove test-lib/junit-3.8.1.jar
+  * build-depend on junit; prepare to and run ant test
+  * use default-jdk 
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 27 Sep 2011 22:18:34 +0000
+
+libxml-java (1.1.6-1) unstable; urgency=low
+
+  * New upstream release
+  * set Maintainer back to Debian Java Maintainers, me as Uploader
+  * move to Section: java 
+  * remove JRE depends
+  * add classpath to jar using jh_classpath
+  * use jh_depends / ${java:Depends} 
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 25 Sep 2011 15:37:04 +0000
+
+libxml-java (0.9.9-3) unstable; urgency=low
+
+  * QA upload.
+  * Orphaning package.
+
+ -- Torsten Werner <twerner@debian.org>  Tue, 16 Aug 2011 22:33:06 +0200
+
+libxml-java (0.9.9-2) unstable; urgency=low
+
+  * upload to unstable 
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 14 Feb 2008 23:52:10 +0100
+
+libxml-java (0.9.9-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 27 Dec 2007 20:06:11 +0100
+
+libxml-java (0.9.5-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 21 Aug 2007 00:19:22 +0200
